@@ -1,0 +1,52 @@
+<spot version="3.5">
+   <head>
+     <debug />
+     <title name="Welcome" />
+     <blockset
+      href="http://blocksets.flatland.com/flatsets/basic.bset"/>
+     <BLOCKSET HREF="http://blocksets.flatland.com/flatsets/islands.bset" />
+     <map style="single" dimensions="(9,9,2)" />
+     <sky texture="images/clouds.gif" brightness="90%" />
+     <ground texture="@basic/dirt.gif" />
+     <ambient_light brightness="100%" />
+     <ambient_sound file="sounds/waves.wav" volume="65%"
+      playback="looped"/>
+   </head>
+   <body>
+	<create symbol="p" block="full">
+	<part NAME="n,s,e,w" texture="@islands:sunlogo.gif" />
+	<popup radius="2" text="Hello if you are reading this, then it means is that you install flatland sucessfully. This is a simple world. You may clone the repository/copy the code and change it to what ever you want. If you want to publish it read the txt file or the html file for publishing." textcolor="(255,255,255)" placement="bottom" />
+    </create>
+    <create symbol="n" block="full" trigger="on click">
+	<part NAME="n,s,e,w" texture="@islands:moonlogo.gif" />
+	<popup radius="2" text="If you want to get started, go to original.flatland.com, then click on guides. " textcolor="(255,255,255)" placement="bottom" />
+	<popup radius="2" text="tomb-of-ash.com/FLATLAND/tutorial/reference/index.html" textcolor="(255,255,255)" placement="top" />
+
+    </create>
+     <level number="1">
+     ###.p.###
+     #.......#
+     #.......#
+     #.......#
+     #n......#
+     #.......#
+     #.......#
+     #.......#
+     #########
+     </level>
+     <level number="2">
+     ###---###
+     #-------#
+     #-------#
+     #-------#
+     #-------#
+     #-------#
+     #-------#
+     #-------#
+     #########
+     </level>
+
+     <entrance location="(5,8,1)" name="default" angle="0,0" />
+     
+   </body>
+</spot>
