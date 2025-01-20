@@ -1,0 +1,1 @@
+Before you publish, you must create a folder containing all your assets and you 3dml file. You must your folder in the web folder. 
